@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+</head>
+<style>
+    .hover li ul{
+    display: none;
+}
+.hover:hover li ul{
+    display: block;
+    color:pink;
+}
+
+.hover li ul ul li{
+    display: none;
+}
+
+.hover li ul:hover ul li{
+    display: block;
+    color: purple;
+}
+</style>
+<body>
+    <ul class="hover">
+        <li>
+            India
+            <ul>
+                <li>
+                    gujarat
+                    <ul>
+                        <li>
+                            Ahmedabad
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
