@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Accordion - Default functionality</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ee25cccb69.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .size {
+            font-size: 45px;
+        }
+        /* i:hover{
+            transform: scale(1);
+            color: yellowgreen;
+        } */
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#st1").click(function () {
+                $(".fa-regular").css("color", "black");
+                $("#st1").css("color", "yellow");
+
+            });
+            $("#st2").click(function () {
+                $(".fa-regular").css("color", "black");
+                $("#st1,#st2").css("color", "yellow");
+
+            });
+            $("#st3").click(function () {
+                $(".fa-regular").css("color", "black");
+                $("#st1,#st2,#st3").css("color", "yellow");
+
+            });
+            $("#st4").click(function () {
+                $(".fa-regular").css("color", "black");
+                $("#st1,#st2,#st3,#st4").css("color", "yellow");
+
+            });
+            $("#st5").click(function () {
+                $(".fa-regular").css("color", "black");
+                $("#st1,#st2,#st3,#st4,#st5").css("color", "yellow");
+
+            });
+            $('#st1').click(function () {
+                $('#aboutfeedback').text('Poor')
+                $('#aboutfeedback').css("padding-left", "10px")
+            })
+            $('#st2').click(function () {
+                $('#aboutfeedback').text('Below Avg')
+                $('#aboutfeedback').css("padding-left", "40px")
+
+            })
+            $('#st3').click(function () {
+                $('#aboutfeedback').text('Avg')
+                $('#aboutfeedback').css("padding-left", "8rem")
+
+            })
+            $('#st4').click(function () {
+                $('#aboutfeedback').text('Good')
+                $('#aboutfeedback').css("padding-left", "11rem")
+
+            })
+            $('#st5').click(function () {
+                $('#aboutfeedback').text('Excellent')
+                $('#aboutfeedback').css("padding-left", "14.5rem")
+
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="container mt-5" style="display: flex; flex-direction: column;">
+        <div class="row ">
+            <div class="col-6">
+                <div class="jumbotron" style="background-color: rgba(20, 19, 19, 0.979); color: white;">
+                    <h3 class="display"> Customer Feedback Form </h3>
+                    <p>Please provide your feedback below.</p>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <form>
+                                <div class="size">
+                                    <!-- fa fa-star is used fa-regular create star icon -->
+                                    <i class="fa-regular fa-star" style="font-size: 50px;" aria-hidden="true" id="st1"></i></i>
+                                    <i class="fa-regular fa-star" style="font-size: 50px;" aria-hidden="true" id="st2"></i></i>
+                                    <i class="fa-regular fa-star" style="font-size: 50px;" aria-hidden="true" id="st3"></i></i>
+                                    <i class="fa-regular fa-star" style="font-size: 50px;" aria-hidden="true" id="st4"></i></i>
+
+                                    <i class="fa-regular fa-star" style="font-size: 50px;" aria-hidden="true" id="st5"></i></i>
+
+                                </div>
+                                <p id="aboutfeedback"></p>
+
+
+                                <!-- <div class="form-group">
+                                    <label for="exampleInputEmail1">Your Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                                        placeholder"Enter Name"> -->
+                                </div>
+                                <div class="form-group" style="margin-left: 5px;">
+                                    <label for="exampleInputEmail1">Your Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                                        placeholder="Enter Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email Id:-</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="Enter Email" style="margin-left: 5px;" required>
+                                </div>
+                                <!-- <div class="form-group">
+                                    <label for="exampleInputEmail1">Your Name</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                                        placeholder"Enter Name"> -->
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Feedback</label>
+                                    <textarea class="form-control" rows="1"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
